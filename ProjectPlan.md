@@ -52,6 +52,16 @@ Together, these datasets provide weather conditions and transit demands and can 
 
 ## Timeline
 
+| **Task**                                   | **Target Completion** | **Primary Member(s)** |
+| ------------------------------------------ | --------------------- | --------------------- |
+| Dataset identification and acquisition     | Week 9                | Steven, Gabe          |
+| Initial exploration                        | Week 9-10             | All members           |
+| Data cleaning and preparation for analysis | Week 10-11            | All members           |
+| Dataset integration                        | Week 11               | Steven, Gabe          |
+| Exploratory analysis                       | Week 11               | All members           |
+| Visualizations and interpretations         | Week 12-13            | Brandon, Sree         |
+| Findings and recommendations               | Week 14               | Brandon, Sree         |
+| Final documentation and submission         | Week 15               | All members           |
 
 ## Constraints
 Using datasets from multiple sources brings the question of possible format and upload differences. We will need to standardize the data and verify that the integration process produces sensible and valid relationships/conclusions. Additionally, we are attempting to pull specified data from a website based on our inputs, which of course could be limited in the scope of the variables and dates. For example, there may be gaps or slight differences in the date variable or line between datasets that require explicit grouping to begin. In the case of missing values/gaps, we can impute the average, median, or a value of 0 based on the variable and reasonableness given the observation, or we can afford to drop it altogether.
