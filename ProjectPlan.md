@@ -5,7 +5,7 @@ Through our analysis, we will explore the relationship between weather condition
 To accomplish this, we’ll be combining three datasets from the City of Chicago and the National Centers for Environmental Information. Our data sets include Chicago climate daily summary, CTA ridership for buses, and CTA ridership for trains. After joining the tables through common variables such as day, line, and route, we will then analyze the patterns, if any, present across the datasets by calculating grouped statistics and generating visualizations. Finally, we will interpret our findings, considering any confounding factors and attempting to pin reasons for why we see the patterns (or lack thereof) that we do. Throughout the project, we will account for missing values, differences in data formats, and data limitations to ensure that our conclusions are appropriately supported by the story being told by the data itself.
 
 ## Responsibilities
-Our team member will have the following responsibilities:
+Our team members will have the following responsibilities:
 - Steven Wu: Download, integrate, and describe weather data.
 - Gabriel Ruiz Camargo: Timeline, constraints, completeness.
 - Brandon Gacek: Facilitate and organize written and visual analysis.
