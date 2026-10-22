@@ -1,12 +1,23 @@
-Overview: Describe the overall goal of your project and your planned approach
-to achieve it. Explain what you aim to accomplish and outline the main steps or
-methods you will use to execute the project (max 250 words).
+## Overview
 
-○ Team: Clearly define team member roles and planned responsibilities.
+Through our analysis, we will explore the relationship between weather conditions and public transportation ridership in Chicago; more specifically, what effects variables like precipitation, air temperature, snowfall, and other indicators have on the amount of riders across bus lines and train lines on that specific day. By identifying potential patterns between the linked datasets, we hope to better understand how weather can influence transportation usage / demand and identify insights that could support more efficient public transport planning.
 
-○ Research or Business Question(s): What is/are the question(s) you intend to
-address? These could be research questions, business questions, or analytical
-questions you want to answer through data analysis.
+To accomplish this, we’ll be combining three datasets from the City of Chicago and the National Centers for Environmental Information. Our data sets include Chicago climate daily summary, CTA ridership for buses, and CTA ridership for trains. After joining the tables through common variables such as day, line, and route, we will then analyze the patterns, if any, present across the datasets by calculating grouped statistics and generating visualizations. Finally, we will interpret our findings, considering any confounding factors and attempting to pin reasons for why we see the patterns (or lack thereof) that we do. Throughout the project, we will account for missing values, differences in data formats, and data limitations to ensure that our conclusions are appropriately supported by the story being told by the data itself.
+
+## Responsibilities
+Our team member will have the following responsibilities:
+- Steven Wu: Download, integrate, and describe weather data.
+- Gabriel Ruiz Camargo: Timeline, constraints, completeness.
+- Brandon Gacek: Facilitate and organize written and visual analysis.
+- Sree Datla: Data specifics and documentation.
+
+## Research Questions
+Our research questions are as follows:
+- What effect do specific weather conditions have on public transportation ridership in Chicago?
+- Do we see ridership increase or decrease under certain conditions? Which ones?
+- Why do we think a relationship (or lack there of) exists? Are we able to draw conclusions that could be useful for the City of Chicago’s transportation department towards efficient planning? What are they?
+
+## Data
 
 ### Chicago Climate Daily Summary
 
@@ -39,19 +50,16 @@ The four main datasets will be integrated in the following sets
 
 Together, these datasets provide weather conditions and transit demands and can examine how daily precipitation, snow, and temperature affect Chicago bus and rail ridership while accounting for day type.
 
+## Timeline
 
-Timeline: Provide a draft of the plan and timeline for completing your project.
-Include a list of specific tasks you need to accomplish, a brief description of each
-task, when each task will be completed, and who will be responsible for
-completing it.
 
-Constraints: Describe any known limitations or challenges with your datasets or
-approach. These might include legal or ethical restrictions, unknown data
-provenance, technical difficulties in processing the data, issues with data
-completeness, limited temporal or spatial coverage, accessibility barriers, or
-other relevant concerns that could affect your work.
+## Constraints
+Using datasets from multiple sources brings the question of possible format and upload differences. We will need to standardize the data and verify that the integration process produces sensible and valid relationships/conclusions. Additionally, we are attempting to pull specified data from a website based on our inputs, which of course could be limited in the scope of the variables and dates. For example, there may be gaps or slight differences in the date variable or line between datasets that require explicit grouping to begin. In the case of missing values/gaps, we can impute the average, median, or a value of 0 based on the variable and reasonableness given the observation, or we can afford to drop it altogether.
 
-○ Gaps: Identify any known gaps or areas where you need additional input.
+Another thing to take into account is the translation of weather into several numeric variables. Firstly, the isolation of variables: A sunny day and a blizzard may have similar wind speeds, for example. It’s important we take into account the overall weather situation by combining variables for analysis. Secondly, weather is arguably not able to be captured as a whole by simply reporting values for barometric pressure, UV, and rain. This inherently taints the credibility of our data slightly, and thus also our conclusions. We are limited in the final advice we can give.
 
-○ Your plan should anticipate later course topics even if you don’t yet know all the
-details. It is expected that your plan will evolve over time.
+The selected sources are official government providers, which should improve formality and transparency of processes. However, we will still review collection methods, definitions, and usage terms rather than assuming that every variable is complete or directly comparable. Regarding usage terms, these organizations publish this information online in a professional format, which we can assume is opening the data up for any use and analysis.
+
+## Gaps
+Several aspects of the project require further investigation as we proceed. We need to confirm the precise variables, date ranges, and levels of aggregation we are including from each dataset. In particular, we must decide and obtain our weather data from a specific (also to be determined) range. As we progress through the course, we may learn additional statistical techniques that could help us investigate relationships more in-depth. We will begin with simple descriptive statistics and visualizations, then consider whether more advanced methods are applicable for our data. Finally, we should inquire about holidays, day of the week, service disruptions, or other relevant factors that could impact our findings without knowing. These variables could help us distinguish weather-related patterns from other influences on ridership.
+
