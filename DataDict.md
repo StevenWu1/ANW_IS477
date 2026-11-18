@@ -1,6 +1,6 @@
 # Data Dictionary
 
-This file goes over the four datasets in our Data folder and the tables we make from them in [basic_clean_merge.ipynb](../Code/basic_clean_merge.ipynb). The row counts and missing values come from [initial_exploration.ipynb](../Code/initial_exploration.ipynb).
+This file goes over the four datasets in our Data folder and the tables we make from them in [basic_clean_merge.ipynb](Code/basic_clean_merge.ipynb). The row counts and missing values come from [initial_exploration.ipynb](Code/initial_exploration.ipynb).
 x
 ## Bus_Routes.csv
 
@@ -54,7 +54,7 @@ This is daily rain and snow from NOAA for the Park Ridge station. Each row is on
 | PRCP | decimal | Precipitation that day | 179 |
 | SNOW | decimal | Snowfall that day | 1,498 |
 | SNWD | decimal | Snow depth on the ground | 3,391 |
-| DAPR, MDPR | decimal | Multiday precipitation total and the number of days it covers. We drop these. | |
+| DAPR, MDPR | decimal | Multi-day precipitation total and the number of days it covers. We drop these. | |
 | WESD, WESF | decimal | Water in the snow on the ground and in new snow. We drop these. | |
 | Columns ending in _ATTRIBUTES | text | NOAA flags for each reading. We drop these. | |
 
