@@ -37,3 +37,13 @@ In fourth visualization, we combined variables from two datasets instead of rely
 
 Next in the project, I am aiming to investigate more about the cross-dataset relationships between all 4 compiled datasets. My analysis will likely include but not be limited to further pattern and visual analysis, metric calculation (such as correlation), and regression analysis.
 
+
+
+## Gabe Ruiz
+My work for this report was the final cleanup and merging of the different data sources. I started off with the tables that Steven hadn't merged yet, `Bus_Routes.csv` and `L_Stations.csv`, and looked at the fields that needed to be changed so they could merge nicely. I started off cleaning them individually but noticed that because the structure of both datasets are so similar, I could instead write a function that standardizes the dates and entities much faster. The function `clean_transit` makes sure that dates are the same and that numbers don't have any commas and creates and ID column based on the user's input.
+
+With both of the datasets cleaned it was time to merge them. Because the data is now nicely formated pandas concat works fine. I then made sure the dates are usable for graphing and visualization purposes and added daytypes for future trend seeing. As we explore the data further we may need to add more columns and dummy varaibles, but these seemed fine for what we need right now. 
+
+Next up was to merge this transit dataset with the weather one that Steven made. The main issue comes from the `temp_station` column. This row separates the two weather beacons that we're looking at and when visualizing and analyzing we need to choose whether we want to aggregate them or look at them separately. Our group hadn't come to a concrete conclusion yet, so I decided to do two merges between the weather and transit data: one that keeps the stations separate and is easily groupable by the station, and one that averages the stations and gives a view of the whole city. For the station separate one, I had to reformat the weather merge a little so that it would keep the station identity; the aggregated one didn't need such changes. 
+
+Up next is to wait for the visualizations and basic analysis to be finished and then I'll add input to them.
